@@ -6,6 +6,10 @@ OwnPay is built with and for an international community of Web3 engineers, AI re
 
 ## Community Channels
 
+- **Official Website:** [https://ownpaylab.tech](https://ownpaylab.tech)
+- **Public Developer Hub:** [https://github.com/Iktiarshovo/ownpaylab.dev](https://github.com/Iktiarshovo/ownpaylab.dev)
+- **Official X (Twitter):** [https://x.com/Ownpayhq](https://x.com/Ownpayhq) (`@Ownpayhq`)
+- **Official LinkedIn:** [https://www.linkedin.com/company/ownpayhq/](https://www.linkedin.com/company/ownpayhq/)
 - **GitHub Discussions:** [Join Discussions](https://github.com/Iktiarshovo/ownpaylab.dev/discussions) — Architectural debates, RFC feedback, and Q&A.
 - **Developer Documentation:** [https://www.ownpaylab.dev](https://www.ownpaylab.dev) — Continuous guides and SDK references.
 - **Merchant Inquiries:** `support@ownpaylab.tech`

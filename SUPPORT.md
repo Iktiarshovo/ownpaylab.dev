@@ -50,7 +50,16 @@ If you believe you have found a security vulnerability in any OwnPay system, con
 
 Always verify you are interacting with authentic OwnPay domains:
 
+- **Official Website & Merchant Portal:** [https://ownpaylab.tech](https://ownpaylab.tech)
 - **Main Brand & Platform:** [https://ownpay.tech](https://ownpay.tech)
-- **Merchant Platform:** [https://ownpaylab.tech](https://ownpaylab.tech)
 - **Developer Platform & Public Lab:** [https://www.ownpaylab.dev](https://www.ownpaylab.dev)
 - **Consumer Platform (Future/Reserved):** [https://ownpay.me](https://ownpay.me)
+
+---
+
+## 6. Official Social & Community Channels
+
+- **Official Website:** [https://ownpaylab.tech](https://ownpaylab.tech)
+- **Public Developer Hub:** [https://github.com/Iktiarshovo/ownpaylab.dev](https://github.com/Iktiarshovo/ownpaylab.dev)
+- **Official X (Twitter):** [https://x.com/Ownpayhq](https://x.com/Ownpayhq) (`@Ownpayhq`)
+- **Official LinkedIn:** [https://www.linkedin.com/company/ownpayhq/](https://www.linkedin.com/company/ownpayhq/)

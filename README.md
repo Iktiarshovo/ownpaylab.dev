@@ -4,6 +4,10 @@
 
 > **OwnPay is building programmable payment and settlement infrastructure for merchants, developers, and autonomous AI agents.**
 
+[![Official Site](https://img.shields.io/badge/Website-ownpaylab.tech-0052FF?style=flat-square&logo=googlechrome&logoColor=white)](https://ownpaylab.tech)
+[![GitHub](https://img.shields.io/badge/GitHub-ownpaylab.dev-181717?style=flat-square&logo=github)](https://github.com/Iktiarshovo/ownpaylab.dev)
+[![X / Twitter](https://img.shields.io/badge/X-@Ownpayhq-000000?style=flat-square&logo=x)](https://x.com/Ownpayhq)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ownpayhq-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/company/ownpayhq/)
 [![Network: Base Mainnet](https://img.shields.io/badge/Network-Base%20Mainnet%20(8453)-0052FF?style=flat-square&logo=coinbase)](https://base.org)
 [![Settlement: Circle USDC](https://img.shields.io/badge/Settlement-Native%20Circle%20USDC-2775CA?style=flat-square&logo=circle)](https://www.circle.com/en/usdc)
 [![Architecture: Non--Custodial](https://img.shields.io/badge/Architecture-Non--Custodial%20Intent%20Layer-10B981?style=flat-square)](#-dual-rail-settlement-architecture)
