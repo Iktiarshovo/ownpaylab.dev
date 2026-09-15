@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OwnPay Checkout Demo — Human Commerce Rail</title>
+  <style>
+    :root {
+      --bg: #090b10;
+      --card-bg: #11141c;
+      --border: #1e2433;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --success: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .checkout-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 440px;
+      padding: 32px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    .brand-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .brand-logo {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      border-radius: 8px;
+    }
+    .order-summary {
+      background: #0d1017;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 24px;
+    }
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .summary-row.total {
+      color: var(--text);
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed var(--border);
+    }
+    .wallet-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .wallet-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #181d2a;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 14px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .wallet-btn:hover {
+      border-color: var(--primary);
+      background: #1e2438;
+    }
+    .badge {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      background: #1e293b;
+      color: #38bdf8;
+    }
+    .status-box {
+      display: none;
+      text-align: center;
+      padding: 20px;
+      background: #0d1017;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-top: 16px;
+    }
+    .spinner {
+      border: 3px solid rgba(255,255,255,0.1);
+      border-top: 3px solid var(--primary);
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 12px auto;
+    }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+
+  <div class="checkout-card">
+    <div class="brand-header">
+      <div class="brand-logo"></div>
+      <div>
+        <h3 style="font-size: 16px;">Acme Cloud Hosting</h3>
+        <p style="font-size: 12px; color: var(--text-muted);">Verified Merchant &bull; OwnPay Protected</p>
+      </div>
+    </div>
+
+    <div class="order-summary">
+      <div class="summary-row">
+        <span>Cloud Compute Pro (1 Mo)</span>
+        <span>$49.99</span>
+      </div>
+      <div class="summary-row">
+        <span>Estimated Gas Fee</span>
+        <span style="color: var(--success); font-weight: 500;">$0.00 (Abstracted)</span>
+      </div>
+      <div class="summary-row total">
+        <span>Total Due</span>
+        <span>49.99 USDC</span>
+      </div>
+    </div>
+
+    <div id="selection-view">
+      <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">Select payment method:</p>
+      <div class="wallet-options">
+        <button class="wallet-btn" onclick="startSimulatedPayment('Browser Injected (MetaMask / Coinbase)')">
+          <span>🦊 Browser Wallet</span>
+          <span class="badge">Base L2</span>
+        </button>
+        <button class="wallet-btn" onclick="startSimulatedPayment('Phantom / Solana SVM')">
+          <span>🟣 Solana Pay</span>
+          <span class="badge">Fastest</span>
+        </button>
+        <button class="wallet-btn" onclick="startSimulatedPayment('WalletConnect Mobile App')">
+          <span>📱 Scan QR / Mobile</span>
+          <span class="badge">Universal</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="status-view" class="status-box">
+      <div id="loading-spinner" class="spinner"></div>
+      <h4 id="status-title" style="margin-bottom: 6px;">Confirming on Blockchain...</h4>
+      <p id="status-desc" style="font-size: 13px; color: var(--text-muted);">Awaiting network finality on Base (2/2 blocks)</p>
+      <div id="tx-hash" style="font-size: 11px; color: #38bdf8; margin-top: 10px; font-family: monospace; word-break: break-all;"></div>
+    </div>
+  </div>
+
+  <script>
+    function startSimulatedPayment(walletName) {
+      document.getElementById('selection-view').style.display = 'none';
+      const statusView = document.getElementById('status-view');
+      statusView.style.display = 'block';
+
+      setTimeout(() => {
+        document.getElementById('status-title').innerText = 'Payment Settled!';
+        document.getElementById('status-desc').innerText = 'Direct non-custodial transfer confirmed on-chain.';
+        document.getElementById('loading-spinner').style.display = 'none';
+        document.getElementById('tx-hash').innerText = 'TX: 0x4e7c09f81a7b...8492041';
+      }, 2500);
+    }
+  </script>
+</body>
+</html>

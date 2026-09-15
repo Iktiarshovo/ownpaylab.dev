@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use OwnPay specifications, architecture designs, or SDKs in your research or systems, please cite it as below."
+authors:
+  - family-names: "OwnPay"
+    given-names: "Engineering Team"
+    website: "https://www.ownpaylab.dev"
+title: "OwnPay: Dual-Rail Settlement Infrastructure for Human Commerce & Autonomous AI Agents"
+version: 1.0.0
+date-released: 2026-09-15
+url: "https://github.com/Iktiarshovo/ownpaylab.dev"
+repository-code: "https://github.com/Iktiarshovo/ownpaylab.dev"
+keywords:
+  - payments
+  - web3
+  - stablecoins
+  - ai-agents
+  - mcp
+  - x402
+  - settlement
+  - fintech
+license: Apache-2.0
