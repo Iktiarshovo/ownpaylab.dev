@@ -1,14 +1,14 @@
 # OwnPay Lab
 
-### Public Developer & Ecosystem Hub
+## Public Developer & Ecosystem Hub
 
 > **OwnPay is building programmable payment and settlement infrastructure for merchants, developers, and autonomous AI agents.**
 
 [![Network: Base Mainnet](https://img.shields.io/badge/Network-Base%20Mainnet%20(8453)-0052FF?style=flat-square&logo=coinbase)](https://base.org)
 [![Settlement: Circle USDC](https://img.shields.io/badge/Settlement-Native%20Circle%20USDC-2775CA?style=flat-square&logo=circle)](https://www.circle.com/en/usdc)
-[![Architecture: Non--Custodial](https://img.shields.io/badge/Architecture-Non--Custodial%20Intent%20Layer-10B981?style=flat-square)](#architecture)
+[![Architecture: Non--Custodial](https://img.shields.io/badge/Architecture-Non--Custodial%20Intent%20Layer-10B981?style=flat-square)](#-dual-rail-settlement-architecture)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-F59E0B?style=flat-square)](LICENSE)
-[![Status: Public Developer Lab](https://img.shields.io/badge/Status-Active%20Development-8B5CF6?style=flat-square)](#official-platforms)
+[![Status: Public Developer Lab](https://img.shields.io/badge/Status-Active%20Development-8B5CF6?style=flat-square)](#-official-platforms--canonical-ecosystem)
 
 ---
 
