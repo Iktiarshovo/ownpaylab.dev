@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "ownpay": {
+      "command": "node",
+      "args": ["../../packages/mcp-server/bin/ownpay-mcp.js"],
+      "env": {
+        "OWNPAY_API_KEY": "own_sec_test_mock_1234567890abcdef",
+        "OWNPAY_API_URL": "https://ownpaylab.tech"
+      }
+    }
+  }
+}

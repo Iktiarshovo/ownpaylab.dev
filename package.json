@@ -1,0 +1,32 @@
+{
+  "name": "ownpaylab.dev",
+  "version": "1.0.0",
+  "description": "OwnPay Public Developer & Ecosystem Lab: SDK, Plugins, Specifications, and Architecture",
+  "private": true,
+  "scripts": {
+    "build": "tsc -b packages/sdk packages/mcp-server packages/plugins",
+    "test": "jest --passWithNoTests"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [
+    "ownpay",
+    "web3",
+    "base",
+    "usdc",
+    "agentic-payments",
+    "sdk",
+    "mcp",
+    "x402"
+  ],
+  "author": "OwnPay Protocol Core Contributors",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.3.3"
+  }
+}

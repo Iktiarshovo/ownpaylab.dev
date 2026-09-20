@@ -34,3 +34,13 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Internal docs & planning
+tasks.md
+walkthrough.md
+yzi_submit.md
+yzi submit.md
+PROJECT_SITE_DOCS_AND_ROADMAP.md
+plan.md
+OwnPay → Unified Human + Agentic Payment Infrastructure — Master Implementation Prompt.md
+

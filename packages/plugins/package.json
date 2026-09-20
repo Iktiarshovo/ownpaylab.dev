@@ -1,0 +1,21 @@
+{
+  "name": "@ownpay/plugins",
+  "version": "1.0.0",
+  "description": "E-Commerce, Discord, and AI bot integration plugins for OwnPay on Base L2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "ownpay",
+    "shopify",
+    "woocommerce",
+    "discord",
+    "plugins",
+    "base",
+    "web3"
+  ],
+  "author": "OwnPay Protocol Team",
+  "license": "MIT"
+}

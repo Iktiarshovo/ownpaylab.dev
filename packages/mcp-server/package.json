@@ -1,0 +1,26 @@
+{
+  "name": "@ownpay/mcp-server",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) Server for OwnPay Agentic Payment Layer on Base L2",
+  "main": "dist/server.js",
+  "bin": {
+    "ownpay-mcp": "./bin/ownpay-mcp.js"
+  },
+  "scripts": {
+    "start": "node ./bin/ownpay-mcp.js",
+    "build": "tsc"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ownpay",
+    "cursor",
+    "windsurf",
+    "claude",
+    "base",
+    "usdc",
+    "ai-agent"
+  ],
+  "author": "OwnPay Protocol Team",
+  "license": "MIT"
+}

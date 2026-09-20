@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ownpay"
+version = "1.0.0"
+description = "Official Python SDK for OwnPay — Developer & AI Agent Payment Rails on Base L2"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "OwnPay Protocol Team", email = "dev@ownpay.dev" }
+]
+keywords = ["web3", "crypto", "payments", "ai-agents", "base", "usdc", "x402"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Point-Of-Sale",
+]
+dependencies = [
+    "urllib3>=1.26.0",
+]
+
+[project.urls]
+Homepage = "https://ownpay.dev"
+Documentation = "https://ownpay.dev/docs"
+Repository = "https://github.com/ownpay/ownpay"

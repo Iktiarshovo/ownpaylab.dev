@@ -1,0 +1,21 @@
+{
+  "name": "@ownpay/adapters",
+  "version": "1.0.0",
+  "description": "Drop-in framework adapters for Next.js, Express, Fastify and Hono on Base L2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "ownpay",
+    "nextjs",
+    "express",
+    "hono",
+    "adapters",
+    "base",
+    "web3"
+  ],
+  "author": "OwnPay Protocol Team",
+  "license": "MIT"
+}

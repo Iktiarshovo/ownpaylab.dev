@@ -1,0 +1,21 @@
+{
+  "name": "@ownpay/sdk",
+  "version": "1.0.0",
+  "description": "Official TypeScript & JavaScript Client SDK for OwnPay Base Intent Payment Gateway",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "ownpay",
+    "web3",
+    "base",
+    "usdc",
+    "payments",
+    "crypto",
+    "sdk"
+  ],
+  "author": "OwnPay Protocol Team",
+  "license": "MIT"
+}
