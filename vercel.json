@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "public": true,
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/api/v1/openapi.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/openapi.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/v1/openapi.json",
+      "dest": "/public/api/v1/openapi.json"
+    },
+    {
+      "src": "/api/v1/ownpay-api.json",
+      "dest": "/public/api/v1/openapi.json"
+    },
+    {
+      "src": "/openapi.json",
+      "dest": "/public/openapi.json"
+    }
+  ]
+}
